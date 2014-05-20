@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1>
+      <%= @title %>
+    </h1>
+      <ul>
+      <% @list_items.each do |member| %>
+        <li><%= member %></li>
+      <% end %>
+      </ul>
+  </body>
+</html>
